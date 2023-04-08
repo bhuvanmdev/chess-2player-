@@ -330,7 +330,7 @@ if __name__ == '__main__':
         if len(inp) == 3 and inp[0]==turns[mov%2]:
             if inp[2] != 'c':
                 pos = input('pos: ').split()
-                if not ''.join(pos).isnumeric():
+                if not ''.join(pos).isnumeric() and len(pos)!=2:
                     print('give correct positon bro: ')
                     continue
                 
