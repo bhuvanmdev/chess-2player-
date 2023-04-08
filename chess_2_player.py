@@ -1,3 +1,4 @@
+from os import system ## play it in terminal for a smooth game
 class Chess:
     def __init__(self):
         self.board = [['br1','bh1','bb1','bq0','bk0','bb2','bh2','br2'],
@@ -337,11 +338,17 @@ if __name__ == '__main__':
                 pos = list(map(int,pos))
             else:
                 pos = [0,0]
+            system('cls')
             if game.sorter(inp,pos):
                 game.print_board()
                 mov += 1
             else:
                 print('\t\tillegal move brothor')
+                if game.wcheck:
+                    print('\t\tDUDE w STILL IS ON CHECK')
+                elif game.bcheck:
+                    print('\t\tDUDE b STILL IS ON CHECK')
+                game.print_board()
         else:
             print(f"its {turns[mov%2]} turn now")
     print(f"\t\t{turns[mov%2]} forfited\n\t\thence {turns[(mov+1)%2]} wins")
