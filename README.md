@@ -11,7 +11,7 @@ This **Python Chess Game** is a two-player strategy game implemented using Pytho
 ## How to Play
 1. Clone the repository to your local machine.
 2. Run the game using the command:
-```python --```
+\n```python chess_2_player.py```
 4. Follow the on-screen instructions to input your moves.
 
 ## Game Rules
