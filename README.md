@@ -11,8 +11,9 @@ This **Python Chess Game** is a two-player strategy game implemented using Pytho
 ## How to Play
 1. Clone the repository to your local machine.
 2. Run the game using the command:
-\n```python chess_2_player.py```
-4. Follow the on-screen instructions to input your moves.
+
+```python chess_2_player.py```
+3. Follow the on-screen instructions to input your moves.
 
 ## Game Rules
 The game follows the standard rules of chess. Each player starts with 16 pieces: one king, one queen, two rooks, two knights, two bishops, and eight pawns. The objective is to checkmate the opponent's king.
